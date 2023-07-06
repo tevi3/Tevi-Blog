@@ -2,6 +2,7 @@ FROM python:3.9-slim
 
 # Working directory
 WORKDIR /app
+ENV PIP_ROOT_USER_ACTION=ignore
 
 # Copy requirements file and install dependencies
 COPY requirements.txt requirements.txt
